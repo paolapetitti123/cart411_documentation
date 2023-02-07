@@ -17,7 +17,7 @@ document.body.appendChild(renderer.domElement) // this creates the canvas
 
 new OrbitControls(camera, renderer.domElement)
 
-const geometry = new THREE.BoxGeometry()
+const geometry = new THREE.TorusGeometry()
 const material = new THREE.MeshBasicMaterial({
     color: 0x00ff00,
     wireframe: true,
