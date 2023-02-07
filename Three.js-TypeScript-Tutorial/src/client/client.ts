@@ -12,6 +12,7 @@ const camera = new THREE.PerspectiveCamera(
 )
 camera.position.z = 2
 
+// http://localhost:8080/
 
 // const loader = new GLTFLoader();
 
