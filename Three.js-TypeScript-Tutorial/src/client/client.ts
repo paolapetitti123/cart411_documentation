@@ -122,14 +122,14 @@ gltfLoader.load(
 
 const camera = new THREE.PerspectiveCamera(
     50,
-    window.innerWidth / window.innerHeight,
+    1,
     0.1,
     1000
 )
-camera.position.z = 7
-camera.position.x = 2.5
-camera.position.y = 3
-camera.translateZ(2)
+camera.position.z = 4.8
+camera.position.x = 3
+camera.position.y = 5
+camera.up.set(0,1,0)
 const canvas = document.getElementById("c1") as HTMLCanvasElement
 
 const renderer = new THREE.WebGLRenderer({canvas:canvas})
@@ -139,23 +139,24 @@ renderer.outputEncoding = THREE.sRGBEncoding
 
 
 
-renderer.setSize(window.innerWidth, window.innerHeight)
+renderer.setSize(1080, 1080)
 // document.body.appendChild(renderer.domElement)
 renderer.setClearColor(0xffffff,1);
 
 const controls = new OrbitControls(camera, renderer.domElement)
 controls.enableDamping = true
+controls.enableRotate = false
+controls.enablePan = false
 
 
 
-
-window.addEventListener('resize', onWindowResize, false)
-function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight
-    camera.updateProjectionMatrix()
-    renderer.setSize(window.innerWidth, window.innerHeight)
-    render()
-}
+// window.addEventListener('resize', onWindowResize, false)
+// function onWindowResize() {
+//     camera.aspect = window.innerWidth / window.innerHeight
+//     camera.updateProjectionMatrix()
+//     renderer.setSize(window.innerWidth, window.innerHeight)
+//     render()
+// }
 
 // const stats = Stats()
 // document.body.appendChild(stats.dom)
@@ -191,9 +192,9 @@ const setAction = (toAction: THREE.AnimationAction) => {
 const gui = new GUI()
 const animationsFolder = gui.addFolder('Animations')
 animationsFolder.open()
-const cameraFolder = gui.addFolder('Camera')
-cameraFolder.add(camera.position, 'z', 0, 10)
-cameraFolder.open()
+
+gui.hide()
+
 
 const clock = new THREE.Clock()
 

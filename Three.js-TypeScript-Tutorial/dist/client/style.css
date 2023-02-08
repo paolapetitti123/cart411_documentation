@@ -2,9 +2,10 @@ body {
     overflow: hidden;
     margin: 0px;
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 #c1 {
-    width: 100%;
+    padding-top: 9rem;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -123,3 +124,57 @@ i {
 	bottom: 0;
     left: -25px;
 }
+
+
+h1, h2 {
+    padding-left: 5px;
+    
+  }
+
+  /* Add a card effect for articles */
+  #card {
+    width: 50%;
+    height: 720px;
+    float: left;
+    background-color: #ff71af;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 1%;
+    margin-top: 2%;
+    border-radius: 10px;
+  }
+  
+  #card h2 {
+    padding-left: 0px;
+  }
+
+  #card li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  #container {
+width: 100%;
+  }
+
+  /* Clear floats after the columns */
+#container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  #can1 {
+    padding-top: 2rem;
+    height: 1080px;
+  }
