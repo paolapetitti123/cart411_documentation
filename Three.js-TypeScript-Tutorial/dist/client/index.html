@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Three.js TypeScript Tutorials by Sean Bradley : https://sbcode.net/threejs</title>
-        <style>
-            body {
-                overflow: hidden;
-                margin: 0px;
-            }
-        </style>
-    </head>
 
-    <body>
-        <script type="module" src="bundle.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paola's documentation website
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="navbar-animmenu">
+        <ul class="show-dropdown main-navbar">
+            <div class="hori-selector">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <li class="active">
+                <a href="javascript:void(0);"><i class="far fa-home"></i>Home</a>
+                
+            </li>
+            <li >
+                <a href="javascript:void(0);"><i class="far fa-documentation"></i>Documentation</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="far fa-references"></i>References</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="far fa-contact"></i>Contact</a>
+            </li>
+
+
+
+        </ul>
+    </div>
+    <div class="can1">
+        <canvas id="c1"></canvas>
+    </div>
+    
+    <script type="module" src="bundle.js"></script>
+    <script src="navbar.js"></script>
+</body>
+
 </html>
