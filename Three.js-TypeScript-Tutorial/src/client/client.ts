@@ -127,8 +127,8 @@ const camera = new THREE.PerspectiveCamera(
     1000
 )
 camera.position.z = 4.8
-camera.position.x = 3
-camera.position.y = 5
+camera.position.x = 5.8
+camera.position.y = 2.4
 camera.up.set(0,1,0)
 const canvas = document.getElementById("c1") as HTMLCanvasElement
 
@@ -144,9 +144,10 @@ renderer.setSize(1080, 1080)
 renderer.setClearColor(0xffffff,1);
 
 const controls = new OrbitControls(camera, renderer.domElement)
-controls.enableDamping = true
+controls.enableDamping = false
 controls.enableRotate = false
 controls.enablePan = false
+controls.enableZoom = false
 
 
 

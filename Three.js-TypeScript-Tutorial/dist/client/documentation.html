@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paola's documentation website
+    </title>
+
+    <link rel="stylesheet" href="styleDoc.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="back to top">&#8593</button>
+
+    <div class="nav">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+    </div>
+    <div class="mylogo">
+        <img class="pao" src="./pictures/mylogo.png" alt="mylogo">
+    </div>
+
+    <h2 class="title">Documenation</h2>
+        <div id="row">
+            <div id="card">
+                <h2>Storyboard</h2>
+                <br>
+                <img class="pictures" src="./pictures/storyboard.png" alt="">
+                <br>
+                <br>
+                <h2>Blender Renders</h2>
+                <br>
+                <img class="pictures" src="./pictures/closeup.png" alt="">
+                <br>
+                <img class="pictures" src="./pictures/startingposition.png" alt="">
+                <br>
+                <p>I hope I can get this to appear almost identical in the browser. At this stage I have 
+                    all my assets done so fingers crossed everything goes smoothly. Also all the 3D models were done by me 
+                    except for the door, that I downloaded from 
+                    <a href="https://sketchfab.com/3d-models/metal-door-a68f3ce9f4cd4a9b92b43932612c547a">sketchfab</a>, 
+                    and I just quickly modified the door color.
+                </p>
+                <br>
+                <br>
+                <h2>Start of coding</h2>
+                <br>
+                <video controls src="./videos/codingStart.mp4" type="video/mp4"></video>
+                <br>
+                <p>Note: unsure why materials are not showing properly in the browser, that'll be my 
+                    next task to fix </p>
+            </div>
+        </div>
+    <script type="module" src="bundle.js"></script>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction(){
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                mybutton.style.display = "block";
+            } else{
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

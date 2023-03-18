@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <!--GOOGLE FONTS-->
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -18,57 +18,51 @@
 </head>
 
 <body>
-    <div id="navbar-animmenu">
-        <ul class="show-dropdown main-navbar">
-            <div class="hori-selector">
-                <div class="left"></div>
-                <div class="right"></div>
-            </div>
-            <li >
-                <a href="javascript:void(0);"><i class="far fa-home"></i>Home</a>
-                
-            </li>
-            <li >
-                <a href="javascript:void(0);"><i class="far fa-documentation"></i>Documentation</a>
-            </li>
-            <li class="active">
-                <a href="javascript:void(0);"><i class="far fa-references"></i>References</a>
-            </li>
-            <li>
-                <a href="javascript:void(0);"><i class="far fa-contact"></i>Contact</a>
-            </li>
-
-
-
-        </ul>
-    </div>
-    <div id="container">
-        <div id="card">
-            <h2>References</h2>
-            <p>
-                <li><a href="https://wenderlygames.itch.io/assessment-examination">1. Assessment Examination - itch.io game</a></li>
-                <li><a href="https://towardsdatascience.com/are-you-unwittingly-helping-to-train-googles-ai-models-f318dea53aee">2. Unwillingly training Google's AI Models - Article </a></li>
-                <li><a href="https://arthur.io/art/zdzislaw-beksinski/night-creeper">3. Night Creeper by Zdzisław Beksiński - Historical Artwork </a></li>
-            </p>
-            <br>
-            <p>
-                Zdzisław Beksiński is known as the first person to create Surrealist Dystopian Art back in the early 1970s, a lot his work inspired the initial concept of my project as I 
-                wanted to go with a dystopian themed game. The Artwork that I referenced above (#3) really encapsulates the isolation and namelessness that I want players to experience as in 
-                my game the player is just yet another citicizen whos under the control of the government and is just another number to them. Now this goes into play with my second reference being
-                the article on how we unwillingly train Google's AI models through their captcha systems, so these kinds of captcha systems is kind of what the game is going to replicate as a way 
-                to critique AI art and on a larger scale, systems we use daily collecting data from us for their own gain. To tie the entire game together, the game Assessment Examination free to play
-                on itch.io stylistically is what the captchas are going to resemble format wise and this game is also what gave me the idea to create a 3D environment with the VCR tv and such, more so 
-                for aesthetic reasons. I think the VCR idea will give the game a more unsettling experience, at least that's what I am hoping for.
-            </p>
+    <div class="nav">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="#">Contact</a></li>
         </div>
-       <div id="can1">
-        <canvas id="c1"></canvas>
-    </div> 
     </div>
-    
-    
+
+    <div class="mylogo">
+        <img class="pao" src="./pictures/mylogo.png" alt="mylogo">
+    </div>
+
+    <div id="container">
+
+        <div id="row">
+            <div id="card">
+                <h1>Welcome!</h1>
+                <br>
+                <p>
+                    Welcome to my personal website where I will be documenting the process of my semester long personal project for the class CART411.
+                    Click on the hamburger icon at the top right to navigate throughout the site! 
+                    <br><br>
+                    A little about this project, I've recently been into thrillers and horrors, ontop of being a pretty big fan of the band ATEEZ.
+                    In 2022, ATEEZ released an album titled "The World EP.1: Movement" and they released a lot of really cool teasers and trailers for this album which heavily 
+                    inspired this project. The premis of this project is simply you are in a room that only has an exit door you can't get out of and a table that has a VHS tv on it.
+                    You have to push the VHS into the tv and that starts the game where you'll have to complete an assessment examination. The assessment test part is inspired by analog 
+                    horror games I've played in the past.
+                    <br><br>
+                    Lastly this project was one I've been wanting to complete for quite some time as a way to teach myself how to use Three.JS, where as you can see by 
+                    the little 3D model of myself to the right here, I already started figuring it out!
+                </p>
+            </div>
+        </div>
+
+        <canvas id="c1"></canvas>
+    </div>
+
+
+
+
     <script type="module" src="bundle.js"></script>
-    <script src="navbar.js"></script>
 </body>
 
 </html>
